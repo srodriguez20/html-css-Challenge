@@ -1,0 +1,139 @@
+body{
+  font-family: Ubuntu,sans-serif;
+}
+
+/*==================== NavBar========================*/
+.navbar{
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 4px;
+    background-color: #444f51;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+
+}
+.navbar .left-menu-bar{
+  margin: 0px;
+}
+.navbar .right-menu-bar{
+ float: right;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a,.navbar .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 19px 16px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+.navbar li a i,.navbar .dropbtn i{
+  padding: 0 8px;
+}
+
+.navbar li a:hover, .navbar .dropdown:hover .dropbtn {
+  background-color: #bdbec0;
+  color: #444f51;
+  border-bottom: 2px solid #dd7500;
+}
+
+.navbar li.dropdown {
+  display: inline-block;
+}
+
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.navbar .dropdown-content a {
+  color: #444f51;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.navbar-logo{
+  border-radius: 50%;
+  max-width: 50px;
+  height: auto;
+  border: 2px solid #dd7500;
+}
+/*==================== Item Box========================*/
+
+.item-box{
+  background-color: #444f51;
+  width: 30%;
+  border-radius: 4px;
+}
+.content{
+  width: 90%;
+  margin: 2% 5%;
+}
+/*==================== Menu Box========================*/
+.menu-box{
+  color: white;
+}
+.menu-box ul {
+  list-style-type: none;
+
+}
+.menu-box h2{
+  background-color: #dd7500;
+  text-align: center;
+  padding: 15px 20px;
+  border-radius: 4px 4px 0 0;
+}
+.menu-item{
+  border-top: 1px solid #363e40;
+  display: block;
+  padding: 15px 0px;
+}
+.menu-item:hover{
+  background-color: #bdbec0;
+  color: #444f51;
+}
+.menu-item:hover .notification-number{
+  background-color: #a03033;
+  color:white;
+}
+.menu-item i{
+  padding: 0 15px;
+}
+.menu-item h3{
+  padding: 10px 0;
+}
+
+.content .menu-box ul li .menu-item{
+  display: flex;
+  justify-content: space-between;
+}
+.menu-item .notification-number{
+  background-color:#bdbec0;
+  color: #444f51;
+  margin: 5px 15px;
+  padding: 5px 0;
+  border-radius: 15px;
+  text-align: center;
+  min-width: 40px;
+}
+
