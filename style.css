@@ -1,15 +1,21 @@
+
 body{
   font-family: Ubuntu,sans-serif;
+
+  font-size: 1rem;
+}
+h2{
+  font-size: 1.5rem;
 }
 
 /*==================== NavBar========================*/
 .navbar{
-    width: 90%;
-    margin: 20px auto;
-    border-radius: 4px;
-    background-color: #444f51;
-    display: flex;
-    justify-content: space-between;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 4px;
+  background-color: #444f51;
+  display: flex;
+  justify-content: space-between;
 }
 .navbar ul {
   list-style-type: none;
@@ -20,7 +26,7 @@ body{
   margin: 0px;
 }
 .navbar .right-menu-bar{
- float: right;
+  float: right;
 }
 
 .navbar li {
@@ -28,10 +34,11 @@ body{
 }
 
 .navbar li a,.navbar .dropbtn {
+  position: relative;
   display: inline-block;
   color: white;
   text-align: center;
-  padding: 19px 16px;
+  padding: 30px 25px;
   text-decoration: none;
   border-bottom: 2px solid transparent;
 }
@@ -44,9 +51,22 @@ body{
   color: #444f51;
   border-bottom: 2px solid #dd7500;
 }
+.navbar li .notification-number{
+  position: absolute;
+  background-color: #a03033;
+  color:white;
+  padding: 2px 5px;
+  border-radius: 15px;
+  text-align: center;
+  top: 10px;
+  right: 2px;
+}
 
 .navbar li.dropdown {
   display: inline-block;
+}
+.navbar li img{
+  margin: 10px 15px;
 }
 
 .navbar .dropdown-content {
@@ -81,18 +101,22 @@ body{
 /*==================== Item Box========================*/
 
 .item-box{
+  color: white;
   background-color: #444f51;
   width: 30%;
   border-radius: 4px;
+  align-self: flex-start;
+  margin:10px 0;
 }
 .content{
   width: 90%;
   margin: 2% 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 /*==================== Menu Box========================*/
-.menu-box{
-  color: white;
-}
+
 .menu-box ul {
   list-style-type: none;
 
@@ -136,4 +160,195 @@ body{
   text-align: center;
   min-width: 40px;
 }
+/*==================== Sign in Box========================*/
+.sign-in-box{
+  text-align: center;
+}
+.sign-in-box h2{
+  padding: 30px 15px;
+}
+.sign-in-box input[type=email],.sign-in-box input[type=password] {
+    
+  font-family:'Font Awesome 5 Free',Ubuntu ;
+  color: white;
+  width: 80%;
+  padding: 12px 30px;
+  margin: 8px 0;
+  display: inline-block;
+  background-color: #363e40;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.sign-in-box input[type=email]::placeholder,.sign-in-box input[type=password]::placeholder{
+  color: #bdbec0;
+}
 
+
+.sign-in-box input[type=email]:focus
+,.sign-in-box input[type=password]:focus {
+  outline: none;
+  border: 1px solid #dd7500 ;
+}
+
+.sign-in-box input[type=submit] {
+
+  width: 60%;
+  background-color: #a03033;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sign-in-box input[type=submit]:hover {
+  background-color: #bdbec0;
+  color: #363e40;
+}
+.sign-in-box a {
+  text-decoration: none;
+  display: block;
+}
+.sign-in-box .facebook-btn{
+  color: white;
+  padding: 20px 0;
+  background-color: #3469af;
+  border-radius: 4px;
+}
+.sign-in-box .facebook-btn i{
+  padding: 0 5px;
+}
+.sign-in-box .forgot-btn{
+  color: #bdbec0;
+  padding: 20px 0;
+}
+/*==================== Twitter Box========================*/
+.twitter-box hr{
+  border:none;
+  border-top: 2px solid #363e40; 
+}
+
+.twitter-box h2{
+  text-align: center;
+  background-color: #35abdd;
+  padding: 20px 0;
+  border-radius: 4px;
+}
+.twitter-box h2 i{
+  padding: 0 10px;
+}
+.twitter-box div{
+  padding: 20px 30px;
+}
+.twitter-box .tweet{
+  padding: 15px 0;
+}
+.twitter-box .tweet a{
+  text-decoration: none;
+  color:#0092dd;
+}
+.twitter-box .tweet-date{
+  color:#bdbec0;
+}
+/*==================== Endava Box========================*/
+.endava-box{
+  text-align: center;
+}
+.endava-box .endava-profile{
+  padding: 15px 15px 0 15px;
+}
+.endava-box .add-btn{
+  text-align: right;
+}
+.endava-box .add-btn i{
+  color: #bdbec0;
+  border-radius: 50%;
+  padding: 4px 5px;
+  border: 2px solid #bdbec0;
+}
+.endava-box .logotype
+{
+  max-width: 50%;
+  border: 5px solid #dd7500;
+  border-radius: 50%;
+}
+.endava-box h2
+{
+  padding: 20px 0;
+}
+.endava-box .endava-profile p{
+  color: #bdbec0;
+  max-width: 70%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+.endava-box .action-buttons{
+  display: flex;
+  border-radius: 0 0 4px 4px;
+  background-color: #363e40;
+}
+.endava-box .action-buttons a{
+  text-decoration: none;
+  color:white;
+  display: block;
+  flex-grow: 1;
+  padding: 20px 0;
+}
+.endava-box .action-buttons a:hover{
+  background-color: #bdbec0;
+}
+.endava-box .action-buttons .comments{
+  border-top: 2px solid #0092dd;
+  border-right: 1px solid #444f51;
+}
+.endava-box .action-buttons .views{
+  border-top: 2px solid #a03033;
+
+}
+.endava-box .action-buttons .likes{
+  border-top: 2px solid #dd7500;
+  border-left: 1px solid #444f51;
+}
+/*==================== Day Box========================*/
+.day-box{
+  text-align: center;
+}
+.day-box .day-actions{
+  border-radius: 4px 4px 0 0;
+  background-color: #363e40;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.day-box .day-actions a{
+  font-size: 1.5rem;
+  text-decoration:none;
+  color:white;
+  display: block;
+}
+.day-box .day-actions a:hover{
+  color:#bdbec0;
+}
+.day-box .day-number{
+  font-size: 10rem;
+}
+.day-box .add-event-btn{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: #0092dd;
+  border-radius: 6px;
+}
+.day-box .add-event-btn:hover{
+
+  color: #363e40;
+  background-color: #bdbec0;
+
+}

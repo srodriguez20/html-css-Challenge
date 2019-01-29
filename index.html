@@ -1,89 +1,151 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="normalize.css">
-    <link rel="stylesheet" href="/Html +css/reset.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    
-   
-    <title>Endava App</title>
-  </head>
-  <body>
 
-      <nav class="navbar">
-        <ul class="left-menu-bar">
-          <li><a><i class="fas fa-cog"></i>Settings</a></li>
-          <li><a><i class="far fa-user"></i>Account</a></li>
-          <li><a><i class="far fa-envelope"></i>Messages</a></li>
-          <li><a><i class="far fa-star"></i>Favorites</a></li>
-        </ul>
-        <ul class="right-menu-bar">
-          <li class="dropdown">
-            <a class="dropbtn">Me<i class="fas fa-angle-down"></i></a>
-            <div class="dropdown-content">
-              <a href="#">Settings</a>
-              <a href="#">Log Out</a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" href="/Html +css/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+
+  <title>Endava App</title>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <ul class="left-menu-bar">
+      <li><a><i class="fas fa-cog"></i>Settings</a></li>
+      <li><a><i class="far fa-user"></i>Account</a></li>
+      <li>  
+        <a>
+              <i class="far fa-envelope"></i>Messages 
+              <div class="notification-number">5</div>
+        </a>
+      </li>
+      <li><a><i class="far fa-star"></i>Favorites</a></li>
+    </ul>
+    <ul class="right-menu-bar">
+      <li class="dropdown">
+        <a class="dropbtn">Me<i class="fas fa-angle-down"></i></a>
+        <div class="dropdown-content">
+          <a href="#">Settings</a>
+          <a href="#">Log Out</a>
+        </div>
+      </li>
+      <li><img class="navbar-logo" src="endava-logo.png" alt="endava logo"></li>
+    </ul>
+  </nav>
+
+  <section class="content">
+
+    <section class="item-box menu-box">
+      <h2>Menu Box</h2>
+      <ul>
+        <li>
+          <a class="menu-item">
+            <div>
+              <h3><i class="far fa-envelope"></i>Messages</h3>
             </div>
+            <div class="notification-number">24</div>
+          </a>
         </li>
-          <li><img class="navbar-logo" src="endava-logo.png" alt="endava logo"></li>
-        </ul>
-      </nav>
-
-    <section class="content">
-        
-      <section class="item-box menu-box">
-          <h2>Menu Box</h2>
-          <ul>
-            <li>
-              <a class="menu-item">
-                <div><h3><i class="far fa-envelope"></i>Messages</h3></div>
-                <div class="notification-number">24</div>
-              </a>
-            </li>
-            <li>
-              <a class="menu-item">
-                <div><h3><i class="far fa-paper-plane"></i>Invites</h3></div>
-                <div class="notification-number">3</div>
-              </a>
-            </li>
-            <li>
-              <a class="menu-item">
-                <div><h3><i class="far fa-calendar-alt"></i>Events</h3></div>
-                <div class="notification-number">9</div>
-              </a>
-            </li>
-            <li>
-              <a class="menu-item">
-                <div><h3><i class="fas fa-cog"></i>Account Settings</h3></div>
-                <div class="notification-number">4</div>
-              </a>
-            </li>
-            <li>
-              <a class="menu-item">
-                <div><h3><i class="fas fa-chart-line"></i>Statistics</h3></div>
-                <div class="notification-number">4</div>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <section class="item-box sign-in-box">
-          <h2> SIGN IN TO YOUR ACCOUNT</h2>
-          <form action="">
-            <input type="email" name="email" placeholder="yourname@gmail.com">
-            <input type="password" name="password" placeholder="Password">
-            <input type="submit" value="SIGN IN">
-          </form>
-          <a href=""> Forgot Password?</a>
-          <a href=""> sign in with Facebook</a>
-        </section>
-        
+        <li>
+          <a class="menu-item">
+            <div>
+              <h3><i class="far fa-paper-plane"></i>Invites</h3>
+            </div>
+            <div class="notification-number">3</div>
+          </a>
+        </li>
+        <li>
+          <a class="menu-item">
+            <div>
+              <h3><i class="far fa-calendar-alt"></i>Events</h3>
+            </div>
+            <div class="notification-number">9</div>
+          </a>
+        </li>
+        <li>
+          <a class="menu-item">
+            <div>
+              <h3><i class="fas fa-cog"></i>Account Settings</h3>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="menu-item">
+            <div>
+              <h3><i class="fas fa-chart-line"></i>Statistics</h3>
+            </div>
+          </a>
+        </li>
+      </ul>
     </section>
-    
 
-  </body>
+    <section class="item-box sign-in-box">
+      <h2>SIGN IN TO YOUR ACCOUNT</h2>
+      <form action="">
+        <input type="email" name="email" placeholder="&#xf0e0;   yourname@gmail.com">
+        <input type="password" name="password" placeholder="&#xf2d0;   Password">
+        <input type="submit" value="SIGN IN">
+      </form>
+      <a class="forgot-btn" href="">Forgot Password?</a>
+      <a class="facebook-btn" href=""><i class="fab fa-facebook-square"></i> sign in with Facebook</a>
+    </section>
+    <section class="item-box twitter-box">
+      <h2><i class="fab fa-twitter"></i>LATEST TWEETS</h2>
+      <div>
+        <p class="tweet">
+          We are in the process of pushing out all of the new CC apps! We will tweet again once they are live <a href="">@Quora</a>
+        </p>
+        <p class="tweet-date">3 minutes ago</p>
+      </div>
+      <hr>
+      <div>
+        <p class="tweet">
+          Ice-cream trucks only play music when out of ice-cream. Well played dad. On <a href="">#CreativeCloud</a>
+        </p>
+        <p class="tweet-date">6 hours ago</p>
+      </div>
+    </section>
+    <section class="item-box endava-box">
+      <div class="endava-profile">
+        <div class="add-btn"><i class="fas fa-plus"></i></div>
+        <img class="logotype" src="endava-logo.png" alt="envada logotype">
+        <h2>Endava</h2>
+        <p>Lorem ipsum dolor sit amet consectetuer adipiscing</p>
+      </div>
+      <div class="action-buttons">
+        <a class="comments" href=""><i class="far fa-comment"></i> 23</a>
+        <a class="views" href=""><i class="far fa-eye"></i> 841</a>
+        <a class="likes" href=""><i class="far fa-heart"></i> 49</a>
+      </div>
+
+    </section>
+    <section class="item-box day-box">
+      <div class="day-actions">
+        <a href=""><i class="fas fa-chevron-circle-left"></i></a>
+        <h2>Wednesday</h2>
+        <a href=""><i class="fas fa-chevron-circle-right"></i></a>
+      </div>
+      <h3 class="day-number">26</h3>
+      <a class="add-event-btn" href="">ADD EVENT</a>
+    </section >
+      
+    <section class="item-box">
+      hello world
+    </section>
+
+
+
+  </section>
+
+
+</body>
+
 </html>
